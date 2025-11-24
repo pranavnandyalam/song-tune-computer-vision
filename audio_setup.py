@@ -6,7 +6,7 @@ from pedalboard.io import AudioFile
 from pedalboard import Pedalboard, PitchShift
 from scipy import signal
 
-with AudioFile('/Users/prn/cv/audios/Kung Fu Fighting.mp3') as f:
+with AudioFile('your_audio_file.ext') as f:
     audio = f.read(f.frames)
     sample_rate = f.samplerate
 

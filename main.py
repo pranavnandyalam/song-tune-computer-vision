@@ -4,14 +4,12 @@ import math
 from constants import *
 from audio_setup import *
 
-
 def dist(first_point, second_point):
     return math.hypot(first_point[0]-second_point[0], first_point[1]-second_point[1])
 def midpoint(first_point, second_point):
     mid_x = (first_point[0] + second_point[0]) // 2
     mid_y = (first_point[1] + second_point[1]) // 2
     return (mid_x, mid_y)
-
 
 cam = cv.VideoCapture(0)
 mp_hands = mp.solutions.hands
